@@ -2,9 +2,53 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Uso de JQuery</title>
+
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+
+<script type="text/javascript">
+	
+/*Para usar a bibliotca de JQuery é necessário usar um caracter
+especial para fazer a chamada:($) ou JQuery*/
+
+$(document).ready(function(){
+	$('#principal').append('<p>Texto Novo</p>');
+	$('#principal').click(function(){
+		$('div').append('<h2>Estou aqui!</h2>');
+	});
+
+});
+
+</script>
+
 </head>
 <body>
+
+<header>
+	
+	<h1>Página com JQuery</h1>
+
+</header>
+
+<main>
+	
+	<section id="principal">
+		<div>
+			<button id="primeiro">primeiro</button><br>
+
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ea laboriosam vero, deserunt non dicta eos provident sunt fugiat quia, mollitia. Corporis, illo sunt voluptates omnis quasi odio consequatur explicabo.</div>
+			<div>Voluptatum, rem, dolorum enim asperiores ipsum itaque earum excepturi quasi libero temporibus labore quisquam, consequatur maiores hic voluptatibus. Vero, enim, debitis. Sint, voluptatibus iure eaque explicabo excepturi tenetur, praesentium quae!</div>
+			<div>Tempora repellat libero sit facere iste vel officia? Tenetur quia cum, quas nesciunt nisi eveniet cupiditate minima ipsam, exercitationem, aliquam possimus eos numquam ut odio eaque modi facere nihil debitis.</div>
+		</div>
+		<div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis omnis facilis aut delectus fuga, dolorem nostrum voluptatem distinctio vero nihil culpa reiciendis, quo ut dolorum aperiam ad, harum vel fugiat!</div>
+			<div>Molestiae, recusandae repellat soluta quisquam! Voluptate minima repudiandae numquam eos eius hic sint, ducimus molestias at vel officia accusamus, odio assumenda veniam recusandae, animi quo reiciendis, nulla fuga necessitatibus pariatur.</div>
+			<div>Quas autem, magni obcaecati, dolorum adipisci consequuntur. Porro odio, expedita vel veniam. Vel quidem maiores itaque voluptatum rerum quis mollitia dolores voluptates nulla quam! Cupiditate, corporis voluptas commodi animi eaque.</div>
+		</div>
+	</section>
+
+</main>
 	
 </body>
 </html>
